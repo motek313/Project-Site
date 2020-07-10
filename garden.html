@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='styles.css'>
+    <title>Desktop Garden</title>
+</head>
+<body>
+    <div class='banner'>
+        <div class='title'>Desktop Garden</div>
+        <div class='menu'>
+            <a href="index.html">Projects</a>
+            <a href="index.html">About</a>
+            <a href="index.html">Contact</a>
+        </div>
+
+    </div>
+    
+  
+    <div class='control-panel'>
+        
+        <div class='form-popup' id='settings-form'>
+            <form class='form-container'>
+                <button id='reset'>Start New Garden</button> 
+                <br><br><br>
+                <h4>Select Rate of Time</h4>
+                <tr>
+                    <td><button class='time-btn' id='normal' onclick='setTime(1)'>Normal</button></td>
+                    <td>24-hr day</td>
+                </tr>
+                <tr>
+                    <td><button class='time-btn' id='fast' onclick='setTime(24)'>Fast</button></td>
+                    <td>1-hr day</td>
+                </tr>
+                <tr>
+                    <td><button class='time-btn' id='hyper' onclick='setTime(24*60)'>Hyper</button></td>
+                    <td>1-min day</td>
+                </tr>
+                <br><br><br>
+                <button id='close-info-form' onclick='closeSettings()'>Close</button>
+            </form>
+        </div>        
+        
+        <div class='panel'>
+            <h2>Resources</h2>
+            <table cellspacing='20'>
+                <tr>
+                    <td>Cash:</td>
+                    <td id='cash-amount'></td>
+                </tr>
+                <tr>
+                    <td>Compost:</td>
+                    <td id='compost-amount'></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class='panel'>
+            <h2>Actions</h2>
+            <table cellspacing='10'>
+                <tr>
+                    <td><button id='add-plot'>Add Plot</button></td>
+                    <td>(Cash: 5, Compost: 2)</td>
+                </tr>
+                <tr>
+                    <td><button id='buy-compost' onclick='buyCompost()'>Buy Compost</button></td>
+                    <td>(Cash: 5)</td>
+                    
+                </tr>
+            </table>
+
+                <div class='form-popup' id='crop-form'>
+                    <form class='form-container'>
+                        <h3>Plant a Crop</h3>
+                        <button id='tomato-btn' onclick='plantCrop("tomato")'>Tomato</button>
+                        <h5 id='tomato-cost'></h5>
+                        <br>
+                        <button id='broccoli-btn' onclick='plantCrop("broccoli")'>Broccoli</button>
+                        <h5 id='broccoli-cost'></h5>
+                        <br>
+                        <button id='romaine-btn' onclick='plantCrop("romaine")'>Romaine</button>
+                        <h5 id='romaine-cost'></h5>
+                        <br>
+                        <button id='close-form' onclick='closeForm()'>Close</button>
+                    </form>
+                </div>
+
+                <div class='form-popup' id='harvest-form'>
+                    <form class='form-container'>
+                        <h3>Harvest this Crop</h3>
+                        <button id='harvest-cash' onclick='harvestCash()'></button>
+                        <br>
+                        <button id='harvest-compost' onclick='harvestCompost()'></button>
+                        <br><br><br>
+                        <button id='close-harvest-form' onclick='closeHarvest()'>Close</button>
+                    </form>
+                </div>
+        </div>
+
+        <div class='panel'>
+            <h2>Maintenance</h2>
+            <table cellspacing='10'>
+                <tr>
+                    <td><button onclick='openForm()'>Plant Crop</button></td>
+                                        
+                     <td><button onclick='waterCrop()'>Water Plot</button></td>
+                </tr>
+                <tr>
+                   
+                    <td><button onclick='harvestOptions()'>Harvest Crop</button></td>
+                    
+                    <td><button id='add-compost'>Apply Compost</button></td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class='settings-panel'>
+            <img src='images/setting-gear.png' id='settings-btn' onclick='openSettings()'>             
+        </div>
+        
+        
+    </div>
+
+         
+
+    <div id='garden'>
+
+
+    </div>
+
+        
+
+        <div class='form-popup' id='crop-info'>
+            <form class='form-container'>
+                <h3>Crop Information</h3>
+                <br>
+                <h4 id='plot-id'></h4>
+                <h4 id='crop-name'></h4>
+                <h4 id='crop-age'></h4>
+                <h4 id='crop-status'></h4>
+                <h4 id='water-health'></h4>
+                <h4 id='crop-yield'></h4>
+                <br>
+                <button id='close-info-form' onclick='closeCropInfo()'>Close</button>
+            </form>
+        </div>
+
+        <div class='form-popup' id='res-popup'>
+            <form class='form-container'>
+                <h3>Insufficient Resources</h3>
+                <br>
+                <h4>You do not have sufficient resources for this action.</h4>
+                <br>
+                <br>
+                <button id='close-res-popup' onclick='closeResPop()'>OK</button>
+            </form>
+        </div>
+
+        <div class='form-popup' id='wat-popup'>
+            <form class='form-container'>
+                <h3>Cannot Water this Plot</h3>
+                <br>
+                <h4>This crop has died due to dehydration. Please harvest and plant a new crop.</h4>
+                <br>
+                <br>
+                <button id='close-wat-popup' onclick='closeWatPop()'>OK</button>
+            </form>
+        </div>
+
+    <script src="main.js"></script>
+
+
+</body>
+</html>
