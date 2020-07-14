@@ -26,6 +26,11 @@ a {
     text-decoration: none;
 }
 
+#get-started {
+    color: black;
+    font-weight: bold;
+}
+
 #td-plot {
     width: 200px;
 }
@@ -67,6 +72,7 @@ a {
     height: 200px;
     width: 200px;
     float: left;
+    margin-right: 20px;
 }
 
 .project-body{
@@ -76,9 +82,7 @@ a {
 }
 
 .project-description {
-    text-align: center;
-    width: 60%;
-    margin: 30px;
+    width: 80%;
 }
 
 .link {
