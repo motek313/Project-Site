@@ -5,7 +5,7 @@ body {
 }
 
 .garden-body {
-        background-color: #2b580c;
+        background-color: #4a772f;
 }
 
 h2 {
@@ -113,7 +113,7 @@ a {
 #plot-area {
     position: absolute;
     margin: 20 0 20 0;
-    width: 70%;
+    width: 50%;
     display: inline-block;
 }
 
@@ -122,7 +122,7 @@ a {
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
-    margin: 5px;
+    margin: 0px 30px 5px 5px;
 }
 
 .panel {
@@ -187,7 +187,8 @@ button {
     padding: 5px;
     border: 3px black;
     position: fixed;
-    top: 250px;
+    top: 100px;
+    right: 200px;
     z-index: 9;
 }
 
@@ -206,9 +207,9 @@ button {
     padding: 5px;
     border: 3px black;
     position: fixed;
-    top: 120px;
-    right: 320px;
-    z-index: 10;
+    top: 100px;
+    right: 200px;
+    z-index: 9;
 }
 
 #res-popup {
