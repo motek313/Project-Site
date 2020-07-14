@@ -6,7 +6,7 @@
     <link rel='stylesheet' href='styles.css'>
     <title>Desktop Garden</title>
 </head>
-<body>
+<body class='garden-body'>
     <div class='banner'>
         <div class='title'>Desktop Garden</div>
         <div class='menu'>
@@ -18,7 +18,17 @@
     </div>
     
   
+    
+
+         
+
+<div id='garden'>
+
     <div class='control-panel'>
+        
+        <div class='settings-panel'>
+            <img src='images/setting-gear.png' id='settings-btn' onclick='openSettings()'>             
+        </div>
         
         <div class='form-popup' id='settings-form'>
             <form class='form-container'>
@@ -61,11 +71,11 @@
             <table cellspacing='10'>
                 <tr>
                     <td><button id='add-plot'>Add Plot</button></td>
-                    <td>(Cash: 5, Compost: 2)</td>
+                    <td id='td-plot'>Cash: 5, Compost: 2</td>
                 </tr>
                 <tr>
                     <td><button id='buy-compost' onclick='buyCompost()'>Buy Compost</button></td>
-                    <td>(Cash: 5)</td>
+                    <td>Cash: 5</td>
                     
                 </tr>
             </table>
@@ -115,19 +125,14 @@
             </table>
         </div>
         
-        <div class='settings-panel'>
-            <img src='images/setting-gear.png' id='settings-btn' onclick='openSettings()'>             
-        </div>
         
         
     </div>
-
-         
-
-    <div id='garden'>
-
-
+    
+    <div id='plot-area'>
     </div>
+
+</div>
 
         
 

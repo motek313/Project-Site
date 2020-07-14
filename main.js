@@ -62,7 +62,7 @@ document.getElementById("cash-amount").innerHTML = cash;
 document.getElementById("compost-amount").innerHTML = compost;
 
 //CREATE A PLOT AREA DIV TO CONTAIN SQUARES
-let garden = document.getElementById('garden');
+let garden = document.getElementById('plot-area');
 let plotArea = document.createElement('div');
 plotArea.setAttribute('class', 'plot');
 garden.appendChild(plotArea);
