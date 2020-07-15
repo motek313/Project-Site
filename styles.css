@@ -41,8 +41,22 @@ a {
     margin: 0px;
     border: 0px;
     padding: 20px;
-    display: block;
 }
+
+#contact {
+    background-color: #3f4441;
+    color: wheat;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    display: block;
+    text-align: center;
+}
+
+#contact-footer {
+    text-align: center;
+}
+
 
 .title {
     font-size: 120px;
