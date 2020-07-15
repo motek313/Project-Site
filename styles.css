@@ -62,10 +62,15 @@ a {
     font-size: 120px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 10;
+    width: 80%;
+    display: inline-block;
 }
 
 .menu {
     font-size: 18px;
+    width: 10%;
+    display: inline-block;
+    text-align: right;
 }
 
 .project-container{
