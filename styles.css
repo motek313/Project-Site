@@ -230,11 +230,23 @@ button {
 
 #crop-info {
     display: none;
+    width: 200px;
     padding: 5px;
     border: 3px black;
     position: fixed;
     top: 100px;
-    right: 200px;
+    right: 120px;
+    z-index: 9;
+}
+
+#harvest-popup {
+    display: none;
+    width: 200px;
+    padding: 5px;
+    border: 3px black;
+    position: fixed;
+    top: 100px;
+    right: 120px;
     z-index: 9;
 }
 

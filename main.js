@@ -348,8 +348,23 @@ document.getElementById('add-plot').addEventListener('click', function(event) {
 
 
 //USE COMPOST
+document.getElementById('add-compost').addEventListener('mouseenter', function(event) {
+    document.getElementById('harvest-popup').style.display = 'block';
+});
+document.getElementById('add-compost').addEventListener('mouseleave', function(event) {
+    document.getElementById('harvest-popup').style.display = 'none';
+});
+
 document.getElementById('add-compost').addEventListener('click', function(event) {
-    compost = (compost - 10);
-    localStorage.setItem('currentCompost', compost);
-    document.getElementById('compost-amount').innerHTML = compost;
+    if (compost >= 5) {
+        compost = (compost - 5);
+        localStorage.setItem('currentCompost', compost);
+        document.getElementById('compost-amount').innerHTML = compost;
+        squares[selectedID].yieldRate = (squares[selectedID].yieldRate * 1.2);
+        let JSONplot = JSON.stringify(squares);
+        localStorage.setItem('currentSquares', JSONplot);
+        location.reload();
+    }  
+    else document.getElementById('res-popup').style.display = 'block';
+
 });
