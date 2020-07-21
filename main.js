@@ -188,9 +188,7 @@ function openForm() {
     document.getElementById('romaine-cost').innerHTML = `Cost: ` + cropArray[3].cost + `,  Yield Time: ` + cropArray[3].minHarvest/oneDay + ` days`;
     document.getElementById('crop-form').style.display = 'block';
 }
-// function closeForm() {
-//      document.getElementById('close-form').style.display = 'none';
-// }
+
 function openCropInfo() { 
    document.getElementById('crop-info').style.display = 'block';
 }
@@ -200,9 +198,6 @@ function closeCropInfo() {
 function openSettings() {
     document.getElementById('settings-form').style.display = 'block';
 }
-// function closeSettings() {
-//     document.getElementById('settings-from').style.display = 'none';
-// }
  
 
 //HARVEST A CROP

@@ -25,16 +25,20 @@
 <div id='garden'>
 
     <div class='control-panel'>
-        
+       
         <div class='settings-panel'>
             <img src='images/setting-gear.png' id='settings-btn' onclick='openSettings()'>             
         </div>
-        
+         
+        <div class='reset-panel'>
+        <button id='reset'>New Garden</button>
+        </div>
+
         <div class='form-popup' id='settings-form'>
             <form class='form-container'>
-                <button id='reset'>Start New Garden</button> 
+                 
+                <h2>Select Rate of Time</h4>
                 <br><br><br>
-                <h4>Select Rate of Time</h4>
                 <tr>
                     <td><button class='time-btn' id='normal' onclick='setTime(1)'>Normal</button></td>
                     <td>24-hr day</td>
@@ -48,7 +52,7 @@
                     <td>1-min day</td>
                 </tr>
                 <br><br><br>
-                <button id='close-info-form' onclick='closeSettings()'>Close</button>
+                <button class='close-btn' onclick='closeSettings()'>Close</button>
             </form>
         </div>        
         
@@ -92,7 +96,7 @@
                         <button id='romaine-btn' onclick='plantCrop("romaine")'>Romaine</button>
                         <h5 id='romaine-cost'></h5>
                         <br>
-                        <button id='close-form' onclick='closeForm()'>Close</button>
+                        <button class='close-btn' onclick='closeForm()'>Close</button>
                     </form>
                 </div>
 
@@ -103,7 +107,7 @@
                         <br>
                         <button id='harvest-compost' onclick='harvestCompost()'></button>
                         <br><br><br>
-                        <button id='close-harvest-form' onclick='closeHarvest()'>Close</button>
+                        <button class='close-btn' onclick='closeHarvest()'>Close</button>
                     </form>
                 </div>
         </div>
@@ -166,7 +170,7 @@
                 <h4>You do not have sufficient resources for this action.</h4>
                 <br>
                 <br>
-                <button id='close-res-popup' onclick='closeResPop()'>OK</button>
+                <button class='close-btn' onclick='closeResPop()'>OK</button>
             </form>
         </div>
 
@@ -177,7 +181,7 @@
                 <h4>This crop has died due to dehydration. Please harvest and plant a new crop.</h4>
                 <br>
                 <br>
-                <button id='close-wat-popup' onclick='closeWatPop()'>OK</button>
+                <button class='close-btn' onclick='closeWatPop()'>OK</button>
             </form>
         </div>
 

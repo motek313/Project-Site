@@ -138,13 +138,35 @@ a {
 
 
 .control-panel {
-    width: 30%;
-    background-color: #f6efa6;
+    width: 280px;
+    background-color: #f0ece3;
     margin: 20 0 20 0;
     display: inline-block;
     border-radius: 2%;
 }
 
+
+.settings-panel {
+    height: 60px;
+    width: 100px;
+    display: inline-block;
+}
+
+#settings-btn {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.reset-panel {
+    width: 170px;
+    display: inline-block;
+}
+
+#reset {
+    margin: 0 0 10 0;
+
+}
 
 #plot-area {
     position: absolute;
@@ -167,19 +189,17 @@ a {
     margin-top: 10px;
 }
 
-.settings-panel {
-    height: 60px;
-    width: 2%;
-}
 
 button {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #5e6f64;
+    color: #f6eedf;
+    background-color: #1f4068;
     border-style: none;
     width: 120px;
     height: 30px;
     padding: 5px; 
     border-radius: 4%;
+    box-shadow: 2px 2px #393e46;
 }
 
 .selected-button {
@@ -191,6 +211,21 @@ button {
     border-radius: 4%;
 }
 
+button:hover {
+    background-color: #c9485b;
+    color: black;
+}
+
+.close-btn {
+    background-color: #e4e3e3;
+    color: black;
+}
+
+.close-btn:hover {
+    background-color: black;
+    color: white;
+}
+
 .form-container {
     background-color: white;
     padding: 10px;
@@ -198,12 +233,6 @@ button {
     border-radius: 4%;
     position: fixed;
     display: inline;
-}
-
-#settings-btn {
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
 }
 
 #settings-form {
