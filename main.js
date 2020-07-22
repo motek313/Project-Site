@@ -38,6 +38,13 @@ function setTime(timeSelection) {
 }
 
 //RESET THE GARDEN  
+document.getElementById('reset').addEventListener('mouseenter', function(event) {
+    document.getElementById('reset-popup').style.display = 'block';
+});
+document.getElementById('reset').addEventListener('mouseleave', function(event) {
+    document.getElementById('reset-popup').style.display = 'none';
+})
+
 document.getElementById('reset').addEventListener('click', function(event) {
     cash = 100;
     compost = 30;
@@ -277,6 +284,13 @@ function resetPlot() {
 
        
 //BUY COMPOST
+document.getElementById('buy-compost').addEventListener('mouseenter', function(event) {
+    document.getElementById('compost-popup').style.display = 'block';
+});
+document.getElementById('buy-compost').addEventListener('mouseleave', function(event) {
+    document.getElementById('compost-popup').style.display = 'none';
+})
+
 function buyCompost() {
     if (cash >= 4) {
         cash = cash - 5;
@@ -325,6 +339,13 @@ waterCrop = () => {
 }
 
 //PURCHASE PLOT
+document.getElementById('add-plot').addEventListener('mouseenter', function(event) {
+    document.getElementById('add-plot-popup').style.display = 'block';
+});
+document.getElementById('add-plot').addEventListener('mouseleave', function(event) {
+    document.getElementById('add-plot-popup').style.display = 'none';
+})
+
 document.getElementById('add-plot').addEventListener('click', function(event) {
     if (cash >= 4 && compost >=2) {
     cash = cash - 5;

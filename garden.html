@@ -18,22 +18,20 @@
     </div>
     
   
-    
-
-         
 
 <div id='garden'>
 
     <div class='control-panel'>
        
-        <div class='settings-panel'>
-            <img src='images/setting-gear.png' id='settings-btn' onclick='openSettings()'>             
-        </div>
-         
-        <div class='reset-panel'>
+         <div class='reset-panel'>
         <button id='reset'>New Garden</button>
         </div>
-
+        
+        <div class='settings-panel'>
+            <img src='images/time-settings.png' id='settings-btn' onclick='openSettings()'>             
+        </div>
+         
+       
         <div class='form-popup' id='settings-form'>
             <form class='form-container'>
                  
@@ -58,7 +56,7 @@
         
         <div class='panel'>
             <h2>Resources</h2>
-            <table cellspacing='20'>
+            <table cellspacing='5' id='resources-table'>
                 <tr>
                     <td>Cash:</td>
                     <td id='cash-amount'></td>
@@ -71,15 +69,15 @@
         </div>
 
         <div class='panel'>
-            <h2>Actions</h2>
+            <h2>Purchases</h2>
             <table cellspacing='10'>
                 <tr>
                     <td><button id='add-plot'>Add Plot</button></td>
-                    <td id='td-plot'>Cash: 5, Compost: 2</td>
+                    <td id='td-plot'></td>
                 </tr>
                 <tr>
                     <td><button id='buy-compost' onclick='buyCompost()'>Buy Compost</button></td>
-                    <td>Cash: 5</td>
+                    <td></td>
                     
                 </tr>
             </table>
@@ -138,7 +136,14 @@
 
 </div>
 
-        
+        <div class='form-popup' id='reset-popup'>
+            <form class='form-container'>
+                <h3>Start a New Garden</h3>
+                <br>
+                <h4>This action removes all plots, sets time speed to Normal, and resets Resources.</h4>
+                <br>
+            </form>
+        </div>
 
         <div class='form-popup' id='crop-info'>
             <form class='form-container'>
@@ -150,6 +155,24 @@
                 <h4 id='crop-status'></h4>
                 <h4 id='water-health'></h4>
                 <h4 id='crop-yield'></h4>
+                <br>
+            </form>
+        </div>
+
+        <div class='form-popup' id='add-plot-popup'>
+            <form class='form-container'>
+                <h3>Add a Plot</h3>
+                <br>
+                <h4>This action adds a plot to your garden. Requires 5 Cash and 2 Compost.</h4>
+                <br>
+            </form>
+        </div>
+
+        <div class='form-popup' id='compost-popup'>
+            <form class='form-container'>
+                <h3>Purchase Compost</h3>
+                <br>
+                <h4>This action adds 10 Compost to Resources. Requires 10 Cash.</h4>
                 <br>
             </form>
         </div>
