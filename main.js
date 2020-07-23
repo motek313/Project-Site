@@ -12,9 +12,9 @@ function Square(name, timeStamp, crop) {
 }
 let cropArray = [
     {cropName: 'empty', sproutImage: 'images/none.png', cropImage: 'images/none.png', rotten: 'images/rotten.png', minHarvest: null, maxHarvest: null, yieldRate: 0},
-    {cropName: 'tomato', sproutImage: 'images/sprout.png', cropImage: 'images/tomato.png', rotten: 'images/rotten.png', minHarvest: (1000*60*60*24*8), maxHarvest: (1000*60*60*24*12), cost: 10, yieldRate: .5},
-    {cropName: 'broccoli', sproutImage: 'images/sprout.png', cropImage: 'images/broccoli-2.png', rotten: 'images/rotten.png', minHarvest: (1000*60*60*24*4), maxHarvest: (1000*60*60*24*20), cost: 12, yieldRate: .4},
-    {cropName: 'romaine', sproutImage: 'images/romaine-sprout.png', cropImage: 'images/romaine.png', rotten: 'images/rotten.png', minHarvest: (1000*60*60*24*1), maxHarvest: (1000*60*60*24*5), cost: 4, yieldRate: .6}
+    {cropName: 'tomato', sproutImage: 'images/sprout.png', cropImage: 'images/tomato.png', rotten: 'images/rotten.png', minHarvest: (1000*60*60*24*24), maxHarvest: (1000*60*60*24*56), cost: 8, yieldRate: .6},
+    {cropName: 'broccoli', sproutImage: 'images/sprout.png', cropImage: 'images/broccoli-2.png', rotten: 'images/rotten.png', minHarvest: (1000*60*60*24*16), maxHarvest: (1000*60*60*24*32), cost: 6, yieldRate: .5},
+    {cropName: 'romaine', sproutImage: 'images/romaine-sprout.png', cropImage: 'images/romaine.png', rotten: 'images/rotten.png', minHarvest: (1000*60*60*24*5), maxHarvest: (1000*60*60*24*20), cost: 4, yieldRate: .7}
     ];
 
  
