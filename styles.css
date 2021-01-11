@@ -59,7 +59,7 @@ a {
 
 
 .title {
-    font-size: 120px;
+    font-size: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 10;
     width: 80%;
@@ -69,9 +69,19 @@ a {
 .menu {
     font-size: 18px;
     width: 10%;
-    display: inline-block;
+    display: inline;
     text-align: right;
 }
+
+.background{
+    height: 2000px;
+    width: 100%;
+}
+
+#coverimage {
+    width: 100%;
+}
+
 
 .project-container{
     margin: 50px;
