@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' href='styles.css'>
+    <link rel="stylesheet" media="screen and (min-width: 950px)" href="widescreen.css">
+    <link rel="stylesheet" media="screen and (max-width: 949px)" href="smallscreen.css">
     <title>Andrew Mrotek's Project Site</title>
 </head>
 <body>
     <div class='banner'>
-        <div class='title'>Analog</div>
+        <img src='images/analog.png'>
         <div class='menu'>
+            <br>
             <a href="#projects">Projects</a>
-            &nbsp;&nbsp;&nbsp;&nbsp;
+            <br><br><br>
             <a href="#contact">Contact</a>
         </div>
 
@@ -19,56 +21,58 @@
 
 </div class='background'>
 <img id='coverimage' src='images/cover1.jpg'>
+<div id='cover-black'></div>
+<img id='coverimage' src='images/cover2.jpg'>
+<div class = 'small' id='cover-white'></div>
+<img class = 'small' id='coverimage' src='images/cover3.png'>
+
+
+    <div class='tile-container'>
+        <div class='tile' id='empty'></div>
+        
+        <div class='tile' id='about'>
+            <br>about
+        </div>
+
+         <div class='tile' id='logo'>
+            <img id='logo-img' src='images/logo5.png'>
+        </div>
+
+        <div class='tile' id='contact-tile'>
+            <br>contact
+        </div>
+
+        <div class='tile' id='blank'></div>
+
+        <div class='tile' id='garden-tile'>
+            virtual garden
+        </div>
+       
+        <div class='tile extra'></div>
+        
+        <div class='tile' id='journal'>
+            wellness journal
+        </div>
+
+        <div class='tile extra'></div>
+        
+    </div>
+
 </div>
 
-
-
-
-    <div class='about-container'>
-        <div class='section-header'>About Me</div>
-        <img class='about-img' src='images/about-image.png'>
-        <p class='about-me'>Writer and creator with a passion for environmental education and sustainability projects. Beginner programmer who believes technology should improve the way we treat each other and our world.</p>
-    </div>
-
-
-
-    <div class='project-container' a id='projects'>
-        <div class='project'>
-            <div class='section-header'>Desktop Garden</div>
-            <div class='project-body'>
-                <img class='project-image' id='comp-garden' src='images/garden.png' alt='garden-image'>
-                <div class='project-body'>
-                    <p class='project-description'>Stuck at home? Neighborhood garden closed due to COVID-19? Make this desktop garden your browser homepage and tend to it each morning. This is a great way for kids and new gardeners to learn the joys of having a backyard vegetable plot.</p>
-                    <button onclick="window.location.href='garden.html';">Get Started!</button>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <div class='project-container'>
-        <div class='project'>
-            <div class='section-header'>Journal</div>
-            <div class='project-body'>
-                <img class='project-image' src='images/journal.png' alt='journal-image'>
-                <p class='project-description'>Under Construction. Stay tuned.</p>
-            </div>
-        </div>
-
-    </div>
-
-    <br>
-    <br>
-
-    <div class='contact' a id='contact'>
-        <div class='section-header' id='contact-footer'>Contact me</div>
+    <div class='contact' id='contact'>
+        <div class='section-header' id='contact-footer'></div>
             <div>
-            <a href="mailto:andrewmrotek313@gmail.com">andrewmrotek313@gmail.com</a>
-            <br>
-            <a href="https://github.com/motek313">GitHub profile</a>
-            </div>
-            <br>
+                <br>
+                <a href="mailto:andrewmrotek313@gmail.com">andrewmrotek313@gmail.com</a>
+                <br>
+                <a href="https://github.com/motek313">GitHub profile</a>
+                </div>
+                <br>
     </div>
     
+    <script src="main.js"></script>
+
+
 </body>
 </html>
