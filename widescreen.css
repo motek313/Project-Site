@@ -42,6 +42,7 @@ a {
     border: 0px;
     padding: 10px;
     display: block;
+    width: 1400px;
 }
 
 #contact {
@@ -171,13 +172,15 @@ a {
 }
 
 #coverimage {
-    width: 100%;
+    width: 1400px;
+    height: 900px;
     z-index: 10;
     margin-bottom: -1px;
 }
 
 #cover-black {
     height: 600px;
+    width: 1400px;
     background-color:#1a1c20;
     margin-top: -10px;
 }

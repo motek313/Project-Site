@@ -42,6 +42,7 @@ a {
     border: 0px;
     padding: 10px;
     display: block;
+    width: 1300px;
 }
 
 .analog-img {
@@ -176,20 +177,22 @@ a {
 }
 
 #coverimage {
-    width: 100%;
-    z-index: 10;
+    width: 1300px;
+    height: 800px;
     margin-bottom: -1px;
 }
 
 #cover-black {
     height: 600px;
+    width: 1300px;
     background-color:#1a1c20;
     margin-top: -10px;
 }
 
-#cover-white {
+
+#cover-brown {
     height: 600px;
-    background-color: #faf9f9;
+    background-color: #c5a880;
     margin-top: -10px;
 }
 
