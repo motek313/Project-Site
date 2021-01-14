@@ -17,6 +17,14 @@ gardenTile.addEventListener('mouseleave', function() {
 let contactTile = document.getElementById('contact-tile');
 contactTile.addEventListener('click', function() {
     window.location.href='#contact-footer';
+});
+contactTile.addEventListener('mouseenter', function () {
+    this.classList.add('paragraph');
+    contactTile.innerHTML = '<br><br><br>andrewmrotek313<br>@gmail.com';
+})
+contactTile.addEventListener('mouseleave', function () {
+    this.classList.remove('paragraph');
+    contactTile.innerHTML = 'contact';
 })
 
 let aboutTile = document.getElementById('about');
