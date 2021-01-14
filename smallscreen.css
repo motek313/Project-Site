@@ -37,25 +37,30 @@ a {
 
 .banner {
     background-color: black;
-    color: wheat;
+    color: white;
     margin: 0px;
     border: 0px;
     padding: 10px;
     display: block;
 }
 
+.analog-img {
+    width: 500px;
+}
+
 #contact {
     background-color: black;
-    color: wheat;
-    margin: 0px;
+    color: white;
+    margin: 0px 0px 0px 0px;
     border: 0px;
     padding: 0px;
     display: block;
     text-align: center;
-}
+   }
 
 #contact-footer {
     text-align: center;
+    font-size: 30px;
 }
 
 
@@ -243,7 +248,7 @@ a {
 .control-panel {
     width: 280px;
     background-color: #f0ece3;
-    margin: 20 0 20 0;
+    margin: 20px 0px 20px 0px;
     display: inline-block;
     border-radius: 2%;
     box-shadow: 2px 2px #393e46;
