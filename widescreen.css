@@ -8,6 +8,10 @@ body {
         background-color: #4a772f;
 }
 
+#garden {
+    margin-bottom: 40px;
+}
+
 h2 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 10;
@@ -57,7 +61,7 @@ a {
 #contact-footer {
     text-align: center;
     font-size: 30px;
-    margin: -10px;
+    margin: -10px 0px 0px 0px;
 }
 
 
