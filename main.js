@@ -24,7 +24,7 @@ contactTile.addEventListener('mouseenter', function () {
 })
 contactTile.addEventListener('mouseleave', function () {
     this.classList.remove('paragraph');
-    contactTile.innerHTML = 'contact';
+    contactTile.innerHTML = '<br>contact';
 })
 
 let aboutTile = document.getElementById('about');
@@ -33,7 +33,7 @@ let aboutTile = document.getElementById('about');
         aboutTile.innerHTML = "<br>Writer and creator  who believes that technology should improve the way we treat ourselves, others, and our world.";
     })
         aboutTile.addEventListener('mouseleave', function() {
-        aboutTile.innerHTML = "about";
+        aboutTile.innerHTML = "<br>about";
         aboutTile.classList.remove('paragraph');    
     })
 
