@@ -30,7 +30,7 @@ contactTile.addEventListener('mouseleave', function () {
 let aboutTile = document.getElementById('about');
     aboutTile.addEventListener('mouseenter', function() {
         aboutTile.classList.add('paragraph');
-        aboutTile.innerHTML = "Writer and creator  who believes that technology should improve the way we treat ourselves, others, and our world.";
+        aboutTile.innerHTML = "<br>Writer and creator  who believes that technology should improve the way we treat ourselves, others, and our world.";
     })
         aboutTile.addEventListener('mouseleave', function() {
         aboutTile.innerHTML = "about";
@@ -40,7 +40,7 @@ let aboutTile = document.getElementById('about');
 let journalTile = document.getElementById('journal');
 journalTile.addEventListener('mouseenter', function () {
     journalTile.classList.add('paragraph');
-    journalTile.innerHTML = 'Stay tuned! <br><br> This community wellness journal is under construction.';
+    journalTile.innerHTML = '<br>Stay tuned! <br><br> This community wellness journal is under construction.';
 journalTile.addEventListener('mouseleave', function () {
     journalTile.classList.remove('paragraph');
     journalTile.innerHTML = 'wellness journal';
